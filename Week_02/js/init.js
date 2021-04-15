@@ -7,10 +7,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 //JavaScript let variable declaration to create a marker
 let marker = L.marker([34.0709, -118.444]).addTo(map)
-		.bindPopup('Math Sciences 4328 aka the Technology Sandbox<br> is the lab where I work in ')
+		.bindPopup('UCLA')
 		// .openPopup();
 
-fetch("js/lab1.geojson")
+fetch("js/map.geojson")
 	.then(response => {
 		return response.json();
 		})

@@ -3,24 +3,51 @@ html, body {
  }
 
  body {
-     display: grid;
-     grid-template-rows: .1fr .30fr .60fr .05fr;
-     grid-template-columns: 1fr;
-     grid-template-areas: "header" "main" "map"  "footer";
-     justify-content: center;
+     display: block;
+     margin: 8px;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     background-color: peachpuff;
  }
 
  header {
-    grid-area: header;
-    display: grid;
+    display: flex;
     grid-template-columns: .2fr .6fr .2fr;
-    justify-content: center;
+    grid-template-areas: "left header" "center header" "right header";
+    text-align: center;
+ }
+
+ .alignleft{
+     padding-top: 3rem;
+     text-align: right;
+     width:20%;
+ }
+
+ .aligncenter{
+     text-align: center;
+     width:50%;
+ }
+
+ .alignright{
+     padding-top: 3rem;
+     text-align:left;
+     width:20%;
  }
 
 .main {
-    display: grid;
-    grid-area: main;
-    background-color: aqua;
+    display:flex;
+    background-color:khaki;
+}
+
+.leftcolumn{
+    width: 40%;
+    margin: 8px;
+}
+
+.rightcolumn{
+    padding-left: 1rem;
+    width: 59%;
+    margin: 8px;
+    text-align: center;
 }
 
 #map {
