@@ -7,6 +7,8 @@ html, body {
      margin: 8px;
      font-family:Georgia, 'Times New Roman', Times, serif;
      background-color: peachpuff;
+    /* background-image: url('https://emoji.gg/assets/emoji/9109_Sad_Cat_Thumbs_Up.png');
+     background-size: 300px 100px; */
  }
 
  header {
@@ -14,28 +16,51 @@ html, body {
     grid-template-columns: .2fr .6fr .2fr;
     grid-template-areas: "left header" "center header" "right header";
     text-align: center;
+    background-color: peachpuff;
  }
 
  .alignleft{
-     padding-top: 3rem;
-     text-align: right;
+     padding-top: 5rem;
+     padding-bottom: 1rem;
+     text-align: center;
      width:20%;
+     background-color: skyblue;
  }
 
  .aligncenter{
      text-align: center;
-     width:50%;
+     width:59%;
  }
 
  .alignright{
-     padding-top: 3rem;
-     text-align:left;
+     padding-top: 5rem;
+     padding-bottom: 1rem;
+     text-align:center;
      width:20%;
+     background-color: skyblue;
  }
 
-.main {
+.main{
     display:flex;
     background-color:khaki;
+}
+
+.main2{
+    display:flex;
+    background-color: paleturquoise;
+}
+
+.aboutLeft{
+    display:flex; 
+    width: 69%;
+    margin: 8px;
+}
+
+.aboutRight{
+    display:flex; 
+    width: 30%;
+    margin: 8px;
+    text-align: right;
 }
 
 .leftcolumn{
