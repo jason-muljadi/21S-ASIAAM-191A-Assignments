@@ -21,10 +21,10 @@ function addMarker(data){
     // these are the names of our fields in the google sheets:
     L.marker([data.lat,data.long]).addTo(map).bindPopup(`<h3>${data.name}</h3>`+ '' + 
     `<p>${data.inawordorphrasecanyoudescribewhythisplacewassentimentaltoyou} - ${data.whatplacelocationareyoumostsentimentalabout}</p>` + '' + `<p>${data.optionaldescribethefeelingsthatyouhadwhenyoufirstvisitedthisplaceandthefeelingsthatyouhadifwhenyourevisitedtheplace}</p>`)
-
+    // changed the data so that the true descrption can be defined
     createButtons(data.lat, data.long, data.whatplacelocationareyoumostsentimentalabout)
 
-    return data.lat, data.long, data.whatplacelocationareyoumostsentimentalabout;
+    return data;
 }
 
 function createButtons(lat,long,whatplacelocationareyoumostsentimentalabout){
