@@ -24,7 +24,7 @@ function addMarker(data){
 
     createButtons(data.lat, data.long, data.whatplacelocationareyoumostsentimentalabout)
 
-    return data
+    return data.lat, data.long, data.whatplacelocationareyoumostsentimentalabout;
 }
 
 function createButtons(lat,long,whatplacelocationareyoumostsentimentalabout){
