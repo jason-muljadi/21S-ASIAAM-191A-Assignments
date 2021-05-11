@@ -20,17 +20,17 @@ function addMarker(data){
     // console.log(data)
     // these are the names of our fields in the google sheets:
     L.marker([data.lat,data.long]).addTo(map).bindPopup(`<h3>${data.name}</h3>`+ '' + 
-    `<p>${data.description} - ${data.location}</p>` + '' + `<p>${data.optional}</p>`)
+    `<p>${data.description} - ${data.whatplacelocationareyoumostsentimentalabout}</p>` + '' + `<p>${data.optional}</p>`)
 
-    createButtons(data.lat, data.long, data.location)
+    createButtons(data.lat, data.long, data.whatplacelocationareyoumostsentimentalabout)
 
     return data
 }
 
-function createButtons(lat,long,location){
+function createButtons(lat,long,whatplacelocationareyoumostsentimentalabout){
     const newButton = document.createElement("button"); // adds a new button
-    newButton.id = "button"+location; // gives the button a unique id
-    newButton.innerHTML = location; // gives the button a title
+    newButton.id = "button"+whatplacelocationareyoumostsentimentalabout; // gives the button a unique id
+    newButton.innerHTML = whatplacelocationareyoumostsentimentalabout; // gives the button a title
     newButton.setAttribute("lat",lat); // sets the latitude 
     newButton.setAttribute("long",long); // sets the longitude 
     newButton.addEventListener('click', function(){
